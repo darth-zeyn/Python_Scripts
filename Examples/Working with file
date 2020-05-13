@@ -1,0 +1,25 @@
+xmen_file = open('xmen_base.txt', 'r')
+
+>>> xmen_file.read()
+'Storm\nWolverine\nCyclops\nBishop\nNightcrawler\n'
+>>> xmen_file.seek(6)
+
+
+>>> for line in xmen_file:
+...     print(line, end="")
+...
+
+>>> xmen_file.close()
+
+
+
+>>> with open('xmen_base.txt', 'a') as f:
+...     f.write('Professor Xavier\n')
+...
+17
+>>> f = open('xmen_base.txt', 'a')
+>>> with f:
+...     f.write("Something\n")
+...
+10
+>>> exit()

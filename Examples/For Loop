@@ -1,0 +1,62 @@
+>>> colors = ['blue', 'green', 'red', 'purple']
+>>> for color in colors:
+...     print(color)
+...
+blue
+green
+red
+purple
+>>> color
+'purple'
+
+
+
+>>> colors = ['blue', 'green', 'red', 'purple']
+>>> for color in colors:
+...     if color == 'blue':
+...         continue
+...     elif color == 'red':
+...         break
+...     print(color)
+...
+green
+>>>
+
+
+
+>>> point = (2.1, 3.2, 7.6)
+>>> for value in point:
+...     print(value)
+...
+2.1
+3.2
+7.6
+>>>
+
+
+
+
+
+>>> ages = {'kevin': 59, 'bob': 40, 'kayla': 21}
+>>> for key in ages:
+...     print(key)
+...
+kevin
+bob
+kayla
+
+
+
+>>> for letter in "my_string":
+...     print(letter)
+...
+m
+y
+_
+s
+t
+r
+i
+n
+g
+>>>

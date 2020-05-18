@@ -1,0 +1,43 @@
+>>> ages = { 'kevin': 59, 'alex': 29, 'bob': 40 }
+>>> ages
+{'kevin': 59, 'alex': 29, 'bob': 40}
+
+>>> ages['kevin'] # We can read a value from a dictionary by subscripting using the key:
+59
+
+
+>> ages['kayla'] = 21 # Keys can be added or changed using subscripting and assignment:
+>>> ages
+{'kevin': 59, 'alex': 29, 'bob': 40, 'kayla': 21}
+
+>>> del ages['kevin'] # Items can be removed from a dictionary using the del statement or by using the pop method:
+>>> ages
+{'alex': 29, 'bob': 40, 'kayla': 21}
+>>> del ages
+>>> ages
+Traceback (most recent call last):
+  File "", line 1, in 
+NameError: name 'ages' is not defined
+>>> ages = { 'kevin': 59, 'alex': 29, 'bob': 40 }
+>>> ages.pop('alex')
+29
+>>> ages
+{'kevin': 59, 'bob': 40}
+
+>>> ages = {'kevin': 59, 'bob': 40}
+>>> ages.keys()
+dict_keys(['kevin', 'bob'])
+>>> list(ages.keys())
+['kevin', 'bob']
+>>> ages.values()
+dict_values([59, 40])
+>>> list(ages.values())
+[59, 40]
+
+
+>>> weights = dict(kevin=160, bob=240, kayla=135) # Alternative Ways to Create a dict Using Keyword Arguments
+>>> weights
+{'kevin': 160, 'bob': 240, 'kayla': 135}
+>>> colors = dict([('kevin', 'blue'), ('bob', 'green'), ('kayla', 'red')])
+>>> colors
+{'kevin': 'blue', 'bob': 'green', 'kayla': 'red'}

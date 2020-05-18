@@ -60,3 +60,23 @@ i
 n
 g
 >>>
+
+>>> for name, age in ages.items():
+...     print(f"Person Named: {name}")
+...     print(f"Age of: {age}")
+...
+Person Named: kevin
+Age of: 59
+Person Named: bob
+Age of: 40
+Person Named: kayla
+Age of: 21
+
+
+>>> list_of_points = [(1, 2), (2, 3), (3, 4)]
+>>> for x, y in list_of_points:
+...     print(f"x: {x}, y: {y}")
+...
+x: 1, y: 2
+x: 2, y: 3
+x: 3, y: 4
